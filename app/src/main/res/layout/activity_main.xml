@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cityu.mbos.fragchecker.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_e4defrage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e4defrage" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/loginfo"
+                            android:layout_width="311dp"
+                            android:layout_height="match_parent"
+                            android:text="" />
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie_chart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:text="Hello World!" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barchart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:text="Hello World!" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
